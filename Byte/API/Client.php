@@ -1,6 +1,6 @@
 <?php
-namespace Byte\Auth;
-class User
+namespace Byte\API;
+class Client
 {
   public function __construct($apiKey, $url = NULL)
   {
