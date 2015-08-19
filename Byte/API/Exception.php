@@ -1,6 +1,6 @@
 <?php
 namespace Byte\API;
-class Exception
+class Exception extends \Exception
 {
     protected $result;
     public function __construct($message="", $code=0 , Exception $previous=NULL, $result)
