@@ -15,7 +15,7 @@ class User
     $ret = json_decode($res->body, true);
     if($ret == NULL)
     {
-      throw new \Exception("Return no JSON");
+      throw new \Byte\API\Exception("Return no JSON", 0, NULL, $res);
     }
     return $ret;
   }
@@ -25,7 +25,7 @@ class User
     $ret = json_decode($res->body, true);
     if($ret == NULL)
     {
-      throw new \Exception("Return no JSON");
+      throw new \Byte\API\Exception("Return no JSON", 0, NULL, $res);
     }
     return $ret;
   }
